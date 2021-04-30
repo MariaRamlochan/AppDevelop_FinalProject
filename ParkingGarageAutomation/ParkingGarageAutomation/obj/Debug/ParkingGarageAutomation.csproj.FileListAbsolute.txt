@@ -20,3 +20,14 @@ C:\Users\maria\OneDrive\Desktop\Application Development\AppDevelop_FinalProject\
 C:\Users\maria\OneDrive\Desktop\Application Development\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\obj\Debug\ParkingGarageAutomation.csproj.CoreCompileInputs.cache
 C:\Users\maria\OneDrive\Desktop\Application Development\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\obj\Debug\ParkingGarageAutomation.exe
 C:\Users\maria\OneDrive\Desktop\Application Development\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\obj\Debug\ParkingGarageAutomation.pdb
+C:\Users\Natsu\Desktop\App.dev\Project\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\bin\Debug\ParkingGarageAutomation.exe.config
+C:\Users\Natsu\Desktop\App.dev\Project\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\bin\Debug\ParkingGarageAutomation.exe
+C:\Users\Natsu\Desktop\App.dev\Project\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\bin\Debug\ParkingGarageAutomation.pdb
+C:\Users\Natsu\Desktop\App.dev\Project\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\obj\Debug\ParkingGarageAutomation.csprojAssemblyReference.cache
+C:\Users\Natsu\Desktop\App.dev\Project\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\obj\Debug\ParkingGarageAutomation.Login.resources
+C:\Users\Natsu\Desktop\App.dev\Project\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\obj\Debug\ParkingGarageAutomation.Main.resources
+C:\Users\Natsu\Desktop\App.dev\Project\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\obj\Debug\ParkingGarageAutomation.Properties.Resources.resources
+C:\Users\Natsu\Desktop\App.dev\Project\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\obj\Debug\ParkingGarageAutomation.csproj.GenerateResource.cache
+C:\Users\Natsu\Desktop\App.dev\Project\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\obj\Debug\ParkingGarageAutomation.csproj.CoreCompileInputs.cache
+C:\Users\Natsu\Desktop\App.dev\Project\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\obj\Debug\ParkingGarageAutomation.exe
+C:\Users\Natsu\Desktop\App.dev\Project\AppDevelop_FinalProject\ParkingGarageAutomation\ParkingGarageAutomation\obj\Debug\ParkingGarageAutomation.pdb
