@@ -30,6 +30,45 @@ namespace ParkingGarageAutomation
             }
         }
 
+        public void SaveFile()
+        {
+            DialogResult result;
+            string fileName;
+
+            using (var fileChooser = new SaveFileDialog())
+            {
+                fileChooser.CheckFileExists = false;
+                result = fileChooser.ShowDialog();
+                fileName = fileChooser.FileName;
+            }
+
+            if (result == DialogResult.OK)
+            {
+                if (string.IsNullOrEmpty(fileName))
+                {
+                    MessageBox.Show("Invalid File Name", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    try
+                    {
+                        var output = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Write);
+
+                        fileWriter = new StreamWriter(output);
+
+                        checkInButton.Enabled = false;
+                        checkOutButton.Enabled = true;
+                    }
+                    catch (IOException)
+                    {
+                        MessageBox.Show("Error opening file", "Eror",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
         public void SetTextBoxValues(string[] values)
         {
             if (values.Length != TextBoxCount)
@@ -53,10 +92,14 @@ namespace ParkingGarageAutomation
 
         private void checkInButton_Click(object sender, EventArgs e)
         {
+            SaveFile();
             string[] values = GetTextBoxValues();
 
-           var record = new Records( values[(int)TextBoxIndices.First], values[(int)TextBoxIndices.Last]);
-            fileWriter.WriteLine($"{record.FirstName}, " + $"{record.LastName}");
+            var record = new Records(values[(int)TextBoxIndices.First], values[(int)TextBoxIndices.Last]);
+           fileWriter.WriteLine($"{record.FirstName}, {record.LastName}");
+
+            SetTextBoxValues(values);
+            ClearTextBoxes();
         }
     }
 }
