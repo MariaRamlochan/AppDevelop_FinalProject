@@ -35,9 +35,9 @@ namespace ParkingGarageAutomation
             this.lNameTextBox = new System.Windows.Forms.TextBox();
             this.checkInButton = new System.Windows.Forms.Button();
             this.checkOutButton = new System.Windows.Forms.Button();
-            this.receiptLabel = new System.Windows.Forms.Label();
             this.logoutButton = new System.Windows.Forms.Button();
             this.parkingSpotLabel = new System.Windows.Forms.Label();
+            this.displayRichTextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -79,9 +79,9 @@ namespace ParkingGarageAutomation
             // checkInButton
             // 
             this.checkInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkInButton.Location = new System.Drawing.Point(359, 239);
+            this.checkInButton.Location = new System.Drawing.Point(351, 239);
             this.checkInButton.Name = "checkInButton";
-            this.checkInButton.Size = new System.Drawing.Size(94, 34);
+            this.checkInButton.Size = new System.Drawing.Size(102, 34);
             this.checkInButton.TabIndex = 4;
             this.checkInButton.Text = "Check in";
             this.checkInButton.UseVisualStyleBackColor = true;
@@ -90,24 +90,13 @@ namespace ParkingGarageAutomation
             // checkOutButton
             // 
             this.checkOutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkOutButton.Location = new System.Drawing.Point(359, 279);
+            this.checkOutButton.Location = new System.Drawing.Point(351, 279);
             this.checkOutButton.Name = "checkOutButton";
-            this.checkOutButton.Size = new System.Drawing.Size(94, 34);
+            this.checkOutButton.Size = new System.Drawing.Size(102, 34);
             this.checkOutButton.TabIndex = 5;
             this.checkOutButton.Text = "Check out";
             this.checkOutButton.UseVisualStyleBackColor = true;
             this.checkOutButton.Click += new System.EventHandler(this.checkOutButton_Click);
-            // 
-            // receiptLabel
-            // 
-            this.receiptLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.receiptLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.receiptLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.receiptLabel.Location = new System.Drawing.Point(476, 9);
-            this.receiptLabel.Name = "receiptLabel";
-            this.receiptLabel.Size = new System.Drawing.Size(204, 353);
-            this.receiptLabel.TabIndex = 6;
-            this.receiptLabel.Text = "label3";
             // 
             // logoutButton
             // 
@@ -130,14 +119,22 @@ namespace ParkingGarageAutomation
             this.parkingSpotLabel.TabIndex = 8;
             this.parkingSpotLabel.Text = "label3";
             // 
+            // displayRichTextBox
+            // 
+            this.displayRichTextBox.Location = new System.Drawing.Point(475, 22);
+            this.displayRichTextBox.Name = "displayRichTextBox";
+            this.displayRichTextBox.Size = new System.Drawing.Size(205, 335);
+            this.displayRichTextBox.TabIndex = 9;
+            this.displayRichTextBox.Text = "";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(699, 431);
+            this.Controls.Add(this.displayRichTextBox);
             this.Controls.Add(this.parkingSpotLabel);
             this.Controls.Add(this.logoutButton);
-            this.Controls.Add(this.receiptLabel);
             this.Controls.Add(this.checkOutButton);
             this.Controls.Add(this.checkInButton);
             this.Controls.Add(this.lNameTextBox);
@@ -159,9 +156,9 @@ namespace ParkingGarageAutomation
         private System.Windows.Forms.TextBox lNameTextBox;
         private System.Windows.Forms.Button checkInButton;
         private System.Windows.Forms.Button checkOutButton;
-        private System.Windows.Forms.Label receiptLabel;
         private System.Windows.Forms.Button logoutButton;
         private System.Windows.Forms.Label parkingSpotLabel;
+        private System.Windows.Forms.RichTextBox displayRichTextBox;
     }
 }
 
