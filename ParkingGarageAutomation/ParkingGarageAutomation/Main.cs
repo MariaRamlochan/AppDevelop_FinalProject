@@ -34,6 +34,18 @@ namespace ParkingGarageAutomation
             Login loginForm = new Login();
             loginForm.Show();
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            if (File.Exists("client.txt"))
+            {
+                using (StreamReader streamReader = new StreamReader("client.txt"))
+                {
+                    fNameTextBox.Text = streamReader.ReadLine();
+                    lNameTextBox.Text = streamReader.ReadLine();
+                }
+            }
+        }
     }
 
 }
