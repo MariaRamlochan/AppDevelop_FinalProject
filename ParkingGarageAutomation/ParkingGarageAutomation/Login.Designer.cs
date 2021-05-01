@@ -77,7 +77,7 @@ namespace ParkingGarageAutomation
             this.idTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idTextBox.Location = new System.Drawing.Point(287, 177);
-            this.idTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.idTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(344, 34);
             this.idTextBox.TabIndex = 3;
@@ -87,7 +87,7 @@ namespace ParkingGarageAutomation
             this.passwordTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTextBox.Location = new System.Drawing.Point(287, 240);
-            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(344, 34);
             this.passwordTextBox.TabIndex = 4;
@@ -96,7 +96,7 @@ namespace ParkingGarageAutomation
             // 
             this.enterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enterButton.Location = new System.Drawing.Point(519, 308);
-            this.enterButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.enterButton.Margin = new System.Windows.Forms.Padding(4);
             this.enterButton.Name = "enterButton";
             this.enterButton.Size = new System.Drawing.Size(113, 41);
             this.enterButton.TabIndex = 5;
@@ -138,9 +138,10 @@ namespace ParkingGarageAutomation
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
