@@ -30,7 +30,9 @@ namespace ParkingGarageAutomation
 
         private void logoutButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Login loginForm = new Login();
+            loginForm.Show();
         }
     }
 
