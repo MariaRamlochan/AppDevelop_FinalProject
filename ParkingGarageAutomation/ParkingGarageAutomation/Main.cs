@@ -41,8 +41,7 @@ namespace ParkingGarageAutomation
             {
                 using (StreamReader streamReader = new StreamReader("client.txt"))
                 {
-                    fNameTextBox.Text = streamReader.ReadLine();
-                    lNameTextBox.Text = streamReader.ReadLine();
+                    displayRichTextBox.Text = streamReader.ReadLine();
                 }
             }
         }
