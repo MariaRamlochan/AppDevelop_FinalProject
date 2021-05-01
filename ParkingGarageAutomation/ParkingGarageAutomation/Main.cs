@@ -27,6 +27,11 @@ namespace ParkingGarageAutomation
                 lNameTextBox.Clear();
             }
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

@@ -66,7 +66,7 @@ namespace ParkingGarageAutomation
             // 
             this.fNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fNameTextBox.Location = new System.Drawing.Point(269, 202);
-            this.fNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.fNameTextBox.Name = "fNameTextBox";
             this.fNameTextBox.Size = new System.Drawing.Size(333, 26);
             this.fNameTextBox.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace ParkingGarageAutomation
             // 
             this.lNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNameTextBox.Location = new System.Drawing.Point(269, 246);
-            this.lNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.lNameTextBox.Name = "lNameTextBox";
             this.lNameTextBox.Size = new System.Drawing.Size(333, 26);
             this.lNameTextBox.TabIndex = 3;
@@ -84,7 +84,7 @@ namespace ParkingGarageAutomation
             // 
             this.checkInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkInButton.Location = new System.Drawing.Point(479, 294);
-            this.checkInButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkInButton.Margin = new System.Windows.Forms.Padding(4);
             this.checkInButton.Name = "checkInButton";
             this.checkInButton.Size = new System.Drawing.Size(125, 42);
             this.checkInButton.TabIndex = 4;
@@ -96,7 +96,7 @@ namespace ParkingGarageAutomation
             // 
             this.checkOutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkOutButton.Location = new System.Drawing.Point(479, 343);
-            this.checkOutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkOutButton.Margin = new System.Windows.Forms.Padding(4);
             this.checkOutButton.Name = "checkOutButton";
             this.checkOutButton.Size = new System.Drawing.Size(125, 42);
             this.checkOutButton.TabIndex = 5;
@@ -119,12 +119,13 @@ namespace ParkingGarageAutomation
             // 
             this.logoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutButton.Location = new System.Drawing.Point(797, 463);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(4);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(109, 37);
             this.logoutButton.TabIndex = 7;
             this.logoutButton.Text = "Logout";
             this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // parkingSpotLabel
             // 
@@ -151,7 +152,7 @@ namespace ParkingGarageAutomation
             this.Controls.Add(this.fNameTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
             this.Text = "Parking Automation";
             this.ResumeLayout(false);
