@@ -20,6 +20,12 @@ namespace ParkingGarageAutomation
 
         private void checkInButton_Click(object sender, EventArgs e)
         {
+            using (StreamWriter fileWriter = new StreamWriter("client.txt"))
+            {
+                fileWriter.WriteLine("{0}, {1}", fNameTextBox.Text, lNameTextBox.Text);
+                fNameTextBox.Clear();
+                lNameTextBox.Clear();
+            }
         }
     }
 
