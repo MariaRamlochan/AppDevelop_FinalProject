@@ -46,13 +46,7 @@ namespace ParkingGarageAutomation
 
         private void Login_Load(object sender, EventArgs e)
         {
-            if (File.Exists("employee.txt"))
-            {
-                using (StreamReader streamReader = new StreamReader("employee.txt"))
-                {
-                    idTextBox.Text = streamReader.ReadLine();
-                }
-            }
+            
             
         }
     }

@@ -35,7 +35,7 @@ namespace ParkingGarageAutomation
             loginForm.Show();
         }
 
-        private void Main_Load(object sender, EventArgs e)
+        private void checkOutButton_Click(object sender, EventArgs e)
         {
             if (File.Exists("client.txt"))
             {

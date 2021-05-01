@@ -96,6 +96,7 @@ namespace ParkingGarageAutomation
             this.checkOutButton.TabIndex = 5;
             this.checkOutButton.Text = "Check out";
             this.checkOutButton.UseVisualStyleBackColor = true;
+            this.checkOutButton.Click += new System.EventHandler(this.checkOutButton_Click);
             // 
             // receiptLabel
             // 
@@ -145,7 +146,6 @@ namespace ParkingGarageAutomation
             this.Controls.Add(this.label1);
             this.Name = "Main";
             this.Text = "Parking Automation";
-            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
